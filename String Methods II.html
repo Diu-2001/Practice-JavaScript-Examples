@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <h2>String Methods</h2>
+
+    <script>
+        let str = "JavaScript is fun!";
+        let a =str.charAt(0); // Get character at index 0
+        let b = str.charCodeAt(6); // Get ASCII value of character at index
+        let c = str.concat(" Let's learn more!"); // Concatenate strings
+        let d = str.split(" "); // Split string into an array by spaces 
+        let e = str.slice(0, 10); // Extract substring from index 0 to 10
+        let f = str.substring(0, 10); // Extract substring from index 0
+        let g = str.substr(0, 10); // Extract substring starting from index 0 with length 10
+        let h = str.repeat(2); // Repeat the string twice
+        let i = String.fromCharCode(97); // Get character from ASCII value 97
+        let j = str.toString(); // Convert to string (redundant here)
+        let k = str.valueOf(); // Get primitive value of the string
+
+        document.write("Character at index 0: " + a + "<br>");
+        document.write("ASCII value of character at index 6: " + b + "<br>");
+        document.write("Concatenated string: " + c + "<br>");       
+        document.write("Split string into array: " + d + "<br>");
+        document.write("Substring from index 0 to 10: " + e + "<br>");
+        document.write("Substring using substring method: " + f + "<br>");
+        document.write("Substring using substr method: " + g + "<br>");
+        document.write("Repeated string: " + h + "<br>");
+        document.write("Character from ASCII value 97: " + i + "<br>");
+        document.write("String converted to string: " + j + "<br>");
+        document.write("Primitive value of the string: " + k + "<br>");
+
+
+    </script>
+</body>
+</html>

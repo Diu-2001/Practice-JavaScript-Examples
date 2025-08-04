@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For/In Loop</title>
+</head>
+<body>
+    <h2>For/In Loop</h2>
+
+    <script>
+        let person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 30,
+            city: "New York"
+        };
+
+        // Using for/in loop to iterate over the properties of the object
+        for (let key in person) {
+            document.write(key + ": " + person[key] + "<br>");
+        }
+
+        // Example with an array
+        let colors = ["Red", "Green", "Blue"];
+
+        // Using for/in loop to iterate over the array
+        for (let index in colors) {
+            document.write("<br>" + "Color at index " + index + ": " + colors[index] + "<br>");
+        }
+    </script>
+</body>
+</html>

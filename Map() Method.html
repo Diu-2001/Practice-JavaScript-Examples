@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map() Method</title>
+</head>
+<body>
+    <h2>Map() Method</h2>
+
+    <script>
+        let a = [11, 4, 9, 16, 25];
+        let b = a.map(test);
+
+        function test(value) {
+            return value * 2;
+        }
+        document.write("Original array: " + a + "<br>");
+        document.write("New array after map: " + b + "<br>");
+
+        let c = [
+            { name: "John", age: 30 },
+            { name: "Jane", age: 25 },
+            { name: "Doe", age: 40 }
+        ];
+
+        let d = c.map(function(item) {
+            return item.name + " is " + item.age + " years old.";
+        });
+
+        document.write("<br>Mapped array of objects: <br>");
+        d.forEach(function(item) {
+            document.write(item + "<br>");
+        });
+    </script>
+</body>
+</html>

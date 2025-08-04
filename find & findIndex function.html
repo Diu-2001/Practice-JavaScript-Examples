@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find & findIndex Method</title>
+</head>
+<body>
+    <h2>find & findIndex Method</h2>
+
+    <script>
+        let a = [10, 20, 30, 40, 50];
+        document.write("Array: " + a + "<br><br>");
+        let b = a.find(checkAdult);// Find the first element greater than 30
+        document.write(b + "<br><br>");
+
+        function checkAdult(age) {
+            return age >= 18; // Check if age is greater than 30
+        }
+
+        let c = a.findIndex(checkAdult); // Find the index of the first element greater than 30
+        document.write(c + "<br><br>");
+
+        function checkAdult(age) {
+            return age >= 18; // Check if age is greater than 30
+        }
+        
+    </script>
+</body>
+</html>

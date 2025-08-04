@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Method</title>
+</head>
+<body>
+    <h2>Number Method</h2>
+
+    <script>
+        let a = "301 ";
+        let b = Number(a); // Convert number to string
+        let c = "20.22 55 30"
+        let d = parseInt(c); // Parse string to integer
+        let e = parseFloat(c); // Parse string to float
+        let f = isFinite(c); // Check if value is finite
+        let g = Number.isInteger(b); // Check if value is an integer
+        let h = 123.456; // Example number for fixed decimal places
+        let num = h.toFixed(2); // Convert number to fixed decimal places (not used here)
+        let i = h.toPrecision(4); // Convert number to precision (not used here)
+        
+
+        document.write("Original number: " + a + 10 + "<br>");
+        document.write("Converted to number: " + b + "<br>");
+        document.write("Parsed integer from string: " + d + "<br>");
+        document.write("Parsed float from integer: " + e + "<br>");
+        document.write("Is the value finite? " + f + "<br>");
+        document.write("Is the value an integer? " + g + "<br>");
+        document.write("Number with fixed decimal places: " + num + "<br>");
+        document.write("Number with precision: " + i + "<br>");
+    </script>
+</body>
+</html>

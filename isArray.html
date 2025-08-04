@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isArray() Method</title>
+</head>
+<body>
+    <h2>isArray() Method</h2>
+
+    <script>
+        let a = ["Harry", "Sanjay", "Rehman", "Aman"];
+        document.write("Is 'a' an array? " + Array.isArray(a) + "<br><br>");
+        let b = "This is a string"; 
+        document.write("Is 'b' an array? " + Array.isArray(b) + "<br><br>");
+        let c = {name: "Rahul", age: 25};
+        if (Array.isArray(c)) {
+            document.write("c is an array.<br>");
+        } else {
+            document.write("c is not an array.<br>");
+            
+        }
+    </script>
+</body>
+</html>

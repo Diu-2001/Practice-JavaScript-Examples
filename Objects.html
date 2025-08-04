@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <h2>Objects</h2>
+
+    <script>
+        let a = {
+            firstName: "Harry",
+            lastName: "Potter",
+            age: 20,
+            email : "hello@potter.net",
+            favMovies: ["Harry Potter", "Avengers", "Batman"],
+            function: function() {
+                return "Hello, " + this.firstName;
+            }
+        };
+
+        console.log(a);
+
+        document.write(a.firstName + "<br>");
+        document.write(a.lastName + "<br>");
+        document.write(a.age + "<br>"); 
+        document.write(a.email + "<br>");
+        document.write(a.favMovies[0] + "<br>");
+        document.write(a.function() + "<br>");
+
+        
+    </script>
+</body>
+</html>

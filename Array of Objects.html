@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Objects</title>
+</head>
+<body>
+    <h2>Array of Objects</h2>
+
+    <script>
+        let students = [
+            {name: "Alice", age: 22, major: "Computer Science"},
+            {name: "Bob", age: 23, major: "Mathematics"},
+            {name: "Charlie", age: 21, major: "Physics"}
+        ];
+
+        console.log(students);
+
+        for (let i = 0; i < students.length; i++) {
+            document.write("Name: " + students[i].name + "<br>");
+            document.write("Age: " + students[i].age + "<br>");
+            document.write("Major: " + students[i].major + "<br><br>");
+        }
+    </script>
+</body>
+</html>

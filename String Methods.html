@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+</head>
+<body>
+    <h2>String Methods</h2>
+
+    <script>
+        let str = "JavaScript is fun!";
+        let a = str.length;
+        let b = str.toUpperCase();
+        let c = str.toLowerCase();
+        let d = str.includes("fun");
+        let e = str.startsWith("Java");
+        let f = str.endsWith("fun");
+        let g = str.search("fun");
+        let h = str.match("fun");
+        let i = str.indexOf("fun");
+        let j = str.lastIndexOf("is");
+        let k = str.replace("fun", "awesome");
+
+        let m = "  Hello World!  ";
+        let n = m.trim(); 
+
+        alert(n);
+
+        document.write("Length of the string: " + a + "<br>");
+        document.write("String in uppercase: " + b + "<br>");
+        document.write("String in lowercase: " + c + "<br>");
+        document.write("Does the string include 'fun'? " + d + "<br>");
+        document.write("Does the string start with 'Java'? " + e + "<br>");
+        document.write("Does the string end with 'fun'? " + f + "<br>");
+        document.write("Index of 'fun' in the string: " + g + "<br>");
+        document.write("Match result for 'fun': " + h + "<br>");
+        document.write("Index of 'fun' using indexOf: " + i + "<br>");
+        document.write("Last index of 'is' using lastIndexOf: " + j + "<br>");
+        document.write("String after replacing 'fun' with 'awesome': " + k + "<br>");
+    </script>
+</body>
+</html>

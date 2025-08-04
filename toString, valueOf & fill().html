@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toString, valueOf & fill() Methods</title>
+</head>
+<body>
+    <h2>toString, valueOf & fill() Methods</h2>
+
+    <script> 
+        let a = ["Harry", "Sanjay", "Rehman", "Aman"];
+        a.toString(); // Convert array to string
+        document.write("Array as string: " + a.toString() + "<br><br>");
+
+        let b = a.valueOf(); // Get the primitive value of the array
+        document.write("Primitive value of array: " + b + "<br><br>");
+
+        let c = ["Harry", "Sanjay", "Rehman", "Aman"];
+        c.fill("Rahul"); // Fill elements from index 1 to 2 with "Rahul"
+        document.write("Array after fill: " + c + "<br><br>");
+    </script>
+</body>
+</html>

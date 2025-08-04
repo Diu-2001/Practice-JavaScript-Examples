@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const variable with Array & Objects</title>
+</head>
+<body>
+    <h2>Const variable with Array & Objects</h2>
+
+    <script>
+        const a = [10, 20, 30, 40];
+
+        a[1] = 50; // This is allowed, as we are modifying the contents of the array
+        console.log(a);
+
+        const b = {
+            firstName: "John",
+            lastName: "Doe"
+        };
+
+        b.firstName = "Jane"; // This is allowed, as we are modifying the property of the object
+        document.write(b.firstName + "<br>");
+    </script>
+</body>
+</html>

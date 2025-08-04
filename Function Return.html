@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Return</title>
+</head>
+<body>
+    <h2>Function Return Value</h2>
+
+    <script>
+        function fullName(fname, lname){
+            let a = fname + " " + lname;
+
+            return a;
+        }
+
+       let fn = fullName("Rohit","Singh");
+       document.write(fn);
+
+       function sum(math,eng,sc){
+        var s = math + eng + sc;
+
+        return s;
+       }
+
+       function percentage(tt){
+        let per = tt/300 * 100;
+        document.write("<br>" + per + "%");
+       }
+
+       let total = sum(55,65,75);
+       percentage(total);
+    </script>
+</body>
+</html>

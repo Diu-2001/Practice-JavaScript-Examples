@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice & Splice() Method</title>
+</head>
+<body>
+    <h2>Slice & Splice() Method</h2>
+
+    <script>
+        let a = ["Harry", "Sanjay", "Rehman", "Aman"];
+        document.write(a + "<br><br>");
+        let b = a.slice(1, 3); // Extract elements from index 1 to 2
+        document.write(b + "<br><br>"); 
+
+        let c = ["Rahul", "Kriti", "Sita"];
+        a.splice(1, 2, ...c); // Remove 2 elements from index 1 and add new elements
+        document.write(a + "<br><br>");
+    </script>
+</body>
+</html>

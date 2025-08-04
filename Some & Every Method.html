@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some & every Method</title>
+</head>
+<body>
+    <h2>some & every Method</h2>
+
+    <script>
+        let ages = [10, 13, 18, 25, 20];
+        document.write(ages + "<br><br>");
+        let hasAdult = ages.some(checkAdult); // Check if there is any minor
+        document.write(hasAdult + "<br><br>");
+
+        function checkAdult(age) {
+            return age >= 18; // Check if age is 18 or older
+        }
+
+        let allAdults = ages.every(checkAdult); // Check if all are adults
+        document.write(allAdults + "<br><br>"); 
+
+        function checkAdult(age) {
+            return age >= 18; // Check if age is 18 or older
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concat & Join() Method</title>
+</head>
+<body>
+    <h2>Concat() & Join() Method</h2>
+
+    <script>
+        let a = ["Harry", "Sanjay", "Rehman", "Aman"];
+
+        let b = a.concat(["Rahul", "Kriti", "Sita"]); // Concatenate new elements
+        document.write(b + "<br><br>");
+       
+         let x = ["Harry", "Sanjay", "Rehman", "Aman"];
+         let y = ["Rahul", "Kriti", "Sita"];
+         let z = x.concat(y); // Concatenate two arrays
+        document.write("<br>" + z + "<br><br>");
+
+        let c = ["Harry", "Sanjay", "Rehman", "Aman"];
+        let d = c.join(" - "); // Join elements with a separator
+        document.write(d + "<br><br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>includes() Methods</title>
+</head>
+<body>
+    <h2>includes() Method</h2>
+    
+    <script>
+        let a = ["Harry", "Sanjay", "Rehman", "Aman"];
+        document.write(a + "<br><br>");
+        let isIncluded = a.includes("Sanjay"); // Check if "Sanjay" is in the array
+        document.write("Is 'Sanjay' included? " + isIncluded + "<br><br>");
+        isIncluded = a.includes("Rahul"); // Check if "Rahul" is in the array
+        document.write("Is 'Rahul' included? " + isIncluded + "<br><br>");
+        let b = ["Harry", "Sanjay", "Rehman", "Aman"];  
+        isIncluded = b.includes("Rehman", 2); // Check if "Rehman" is in the array starting from index 2
+        document.write("Is 'Rehman' included starting from index 2? " + isIncluded + "<br><br>");
+    </script>
+</body>
+</html>
