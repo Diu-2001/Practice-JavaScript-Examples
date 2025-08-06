@@ -24,6 +24,22 @@ let a = document.getElementById("header").classList.length;
 console.log(a);
 }
 
+document.getElementById("header").addEventListener("click", contains);
+
+function contains() {
+    document.getElementById("header").classList.toggle("xyz");
+    let a = document.getElementById("header").classList.contains("xyz");
+    console.log(a);
+}
+
+document.getElementById("header").addEventListener("click", toggle);
+
+function toggle() {
+    document.getElementById("header").classList.toggle("xyz");
+    let a = document.getElementById("header").classList;
+    console.log(a);
+}
+
 
 
 
